@@ -1,0 +1,15 @@
+{
+  "name": "codecommit-buildkite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -f ./codecommit-buildkite.zip; zip -r ./codecommit-buildkite.zip index.js node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
