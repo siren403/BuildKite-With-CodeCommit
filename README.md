@@ -9,6 +9,12 @@ yarn install
 yarn build
 ```
 
+> Windows
+```
+yarn install
+yarn build-win
+```
+
 ## Uploading to AWS
 
 1. Go to Lambda AWS console

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -f ./codecommit-buildkite.zip; zip -r ./codecommit-buildkite.zip index.js node_modules",
+    "build-win": "./build-win.bat",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
