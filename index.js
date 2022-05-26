@@ -6,7 +6,7 @@ const codecommit = new AWS.CodeCommit()
 
 const handleReference = async (repositoryName, reference) => {
     
-    const buildkiteURL = `https://api.buildkite.com/v2/organizations/${process.env.BUILDKITE_ORG}/pipelines/aws_${repositoryName}/builds`
+    const buildkiteURL = `https://api.buildkite.com/v2/organizations/${process.env.BUILDKITE_ORG}/pipelines/aws-${repositoryName.toLowerCase()}/builds`
     
     const { commit, ref } = reference
     
