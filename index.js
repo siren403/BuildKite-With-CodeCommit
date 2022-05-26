@@ -2,9 +2,12 @@ const AWS = require('aws-sdk')
 const axios = require('axios')
 
 const codecommit = new AWS.CodeCommit()
-const buildkiteURL = `https://api.buildkite.com/v2/organizations/${process.env.BUILDKITE_ORG}/pipelines/${process.env.BUILDKITE_PIPELINE}/builds`
+
 
 const handleReference = async (repositoryName, reference) => {
+    
+    const buildkiteURL = `https://api.buildkite.com/v2/organizations/${process.env.BUILDKITE_ORG}/pipelines/aws_${repositoryName}/builds`
+    
     const { commit, ref } = reference
     
     const match = ref.match(/^refs\/heads\/(.*)/)
