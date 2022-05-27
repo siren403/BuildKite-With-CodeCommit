@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1144.0"
   }
 }
